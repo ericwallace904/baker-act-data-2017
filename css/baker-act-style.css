@@ -3,7 +3,7 @@
 	height: 500px;
 }
 
-.od_info {
+.county_info {
 	padding: 6px 8px;
 	font: 14px/16px Arial, Helvetica, sans-serif;
 	background: white;
@@ -12,7 +12,7 @@
 	border-radius: 5px;
 }
 
-.od_info {
+.county_info {
 	margin: 0 0 5px;
 	color: #777;
 }

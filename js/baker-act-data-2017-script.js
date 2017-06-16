@@ -1,9 +1,9 @@
 var layer = new L.StamenTileLayer('toner-lite');
 
-var map = new L.Map('map').setView([30.364,-81.652],10);
+var map = new L.Map('map').setView([28.542,-81.681],6);
 map.addLayer(layer);
 
-function setColor(overdoses) {
+function setColor(total) {
 	var overdose_num = parseInt (overdoses);
 	var getColor = chroma.scale(['#efedf5', '#756bb1']).domain([0,400]);
 	return getColor(overdose_num);
@@ -59,7 +59,7 @@ county_info.update = function (props) {
 
 county_info.addTo(map);
 	
-L.geoJson(duval_zip, {
+L.geoJson(fl_counties, {
 	style: setStyle,
 	onEachFeature: onEachFeature
 }).addTo(map);
